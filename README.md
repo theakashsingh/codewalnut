@@ -1,6 +1,6 @@
 # Front-End Technical Test
 
-Welcome to CodeWalnut's front-end technical test using React and the PokeAPI! This project is designed to test your React skills across three levels: **Junior**, **Mid**, and **Senior**. You'll be working with data from the PokeAPI to build a Pokémon app with varying degrees of complexity based on your chosen challenge level.
+Welcome to CodeWalnut's front-end technical test using React and the [PokeAPI](https://pokeapi.co/)!! The PokeAPI provides an extensive REST and GraphQL API for fetching Pokémon data. In this test, you will build a Pokémon app that utilizes the PokeAPI, and you can choose from different levels of difficulty depending on your experience.
 
 ---
 
@@ -9,8 +9,7 @@ Welcome to CodeWalnut's front-end technical test using React and the PokeAPI! Th
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd pokemon-app
+git clone https://github.com/CW-Codewalnut/codewalnut-front-end-tech-test.git
 ```
 
 ### 2. Install Dependencies
@@ -34,7 +33,8 @@ The project is set up with **Tailwind CSS** as the default styling solution. How
 - **Tailwind (default)**: Already configured in `src/styles/tailwind.css`.
 - **CSS**: You can create and use custom CSS styles by modifying or adding to `src/styles/custom.css`.
 - **Sass**: A basic Sass configuration is already in place. Add your styles to `src/styles/custom.scss`.
-- **Styled Components**: If you prefer to use styled components, a basic setup with a `theme.js` file is provided. You can create and use styled components where needed.
+
+You are free to use any styling approach you prefer, these are just set up for you already in this project.
 
 ### 4. Running the App
 
@@ -45,18 +45,6 @@ pnpm dev
 ```
 
 This will launch the app in development mode at [http://localhost:3000](http://localhost:3000).
-
-### 5. Building the App
-
-To create a production-ready build, run:
-
-```bash
-pnpm build
-```
-
-This will generate the optimized build files in the `build` folder.
-
----
 
 ## Challenge Tiers
 
@@ -139,5 +127,6 @@ Build an advanced **Pokémon team management app** that allows users to create a
 - **Code Quality**: We will evaluate your use of clean code practices, meaningful variable names, and comments where necessary.
 - **Responsiveness**: The app should work well on both mobile and desktop devices.
 - **Functionality**: Ensure that all required features work as expected.
+- **Best Practices**: We value the use of best practices in React development, such as proper naming, state management, and component organization.
+- **Testing**: Testing is a big part of modern development, so will value the use of testing in your solution.
 - **Creativity**: Feel free to add any additional features or enhance the design beyond the requirements.
-- **Best Practices**: We value the use of best practices in React development, such as proper state management and component organization.
