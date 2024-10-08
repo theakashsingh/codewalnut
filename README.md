@@ -130,3 +130,4 @@ Build an advanced **Pokémon team management app** that allows users to create a
 - **Best Practices**: We value the use of best practices in React development, such as proper naming, state management, and component organization.
 - **Testing**: Testing is a big part of modern development, so will value the use of testing in your solution.
 - **Creativity**: Feel free to add any additional features or enhance the design beyond the requirements.
+- **Willingness**: We want people who go the extra mile in everything they do.
