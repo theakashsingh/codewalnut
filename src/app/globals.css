@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -24,4 +24,25 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
 }
+
+.dark {
+  background-color: #1a202c;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3182ce;
+  color: white;
+  border-radius: 5px;
+}
+

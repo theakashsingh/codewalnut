@@ -1,21 +1,39 @@
 /* eslint-disable react/jsx-filename-extension */
-import Image from "next/image";
 
-export default function Home() {
+"use client"
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+export default function HomePage() {
+  const [teamName, setTeamName] = useState('');
+  const router = useRouter();
+
+  const createTeam = () => {
+    if (teamName) {
+      router.push(`/team/${teamName}`);
+    }
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-2 row-start-2 items-center justify-center">
-        <Image
-          src="/images/codewalnut-logo.svg"
-          alt="CodeWalnut logo"
-          width={180}
-          height={38}
-          priority
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+      <div className="text-center">
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-white">Create Your Pokémon Team</h1>
+        <input
+          type="text"
+          value={teamName}
+          onChange={(e) => setTeamName(e.target.value)}
+          className="mt-4 px-4 py-2 border rounded-md"
+          placeholder="Enter Team Name"
         />
-
-        <h1 className="text-4xl font-bold mt-6">Tech Test</h1>
-        <h2 className="text-lg">Good luck!</h2>
-      </main>
+        <button
+          onClick={createTeam}
+          className="ml-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+        >
+          Create Team
+        </button>
+      </div>
     </div>
   );
 }
+
