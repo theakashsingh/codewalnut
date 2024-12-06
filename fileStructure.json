@@ -1,0 +1,37 @@
+{
+    "project_structure": {
+      "src": {
+        "components": [
+          "Layout.js",
+          "Navbar.js",
+          "PokemonCard.js",
+          "TeamBuilder.js",
+          "PokemonDetails.js"
+        ],
+        "pages": [
+          "index.js",
+          "teams.js",
+          "pokemon/[id].js"
+        ],
+        "redux": {
+          "slices": [
+            "teamSlice.js",
+            "authSlice.js",
+            "themeSlice.js"
+          ],
+          "store.js"
+        },
+        "utils": [
+          "api.js",
+          "mockData.js"
+        ],
+        "hooks": [
+          "usePokemonFetch.js"
+        ],
+        "tests": [
+          "TeamBuilder.test.js",
+          "PokemonCard.test.js"
+        ]
+      }
+    }
+  }
